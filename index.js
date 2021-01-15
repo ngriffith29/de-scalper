@@ -59,7 +59,7 @@ async function test(filename) {
   console.log(`images has been output at\n${imagesFolder}\n`);
 
   // Replace image
-  // It is assumed here that the last picture is replaced.
+  // It is assumed here that the first picture is replaced.
   const correctedFile = path.join(__dirname, filename);
   let data = fs.readFileSync(path.join(__dirname, "image_corrected.jpg"));
   let bufferData = Buffer.from(data);
